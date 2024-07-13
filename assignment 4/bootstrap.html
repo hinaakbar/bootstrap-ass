@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>bootstrap css</title>
+</head>
+
+<body>
+  <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+    <a class="navbar-brand" href="#">SB UI Kit Pro</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Landing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Pages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Documentation</a>
+      </li>
+      <button type="button" class="btn btn-success">Shop Now</button>
+  </nav>
+  <style>
+    .custom-footer {
+      position: relative;
+      background-color: #f8f9fa;
+      /* Change this to your desired background color */
+      padding: 2rem;
+      /* Adjust padding as needed */
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    .custom-footer h2,
+    .custom-footer p,
+    .custom-footer .d-flex {
+      z-index: 1;
+      position: relative;
+    }
+
+    .jumbotron {
+      background-color: gray;
+      color: #fff;
+      padding: 100px 25px;
+    }
+
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+
+    .container-fluid {
+      padding: 20px 20px;
+    }
+
+    .card {
+      flex: 0 0 auto;
+      /* Prevent cards from stretching */
+    }
+
+    .card {
+      height: 100%;
+    }
+
+    .row {
+      flex-wrap: nowrap;
+    }
+
+    .navbar-custom {
+      padding-top: 30px;
+      /* Adjust the top padding as needed */
+      padding-bottom: 30px;
+      /* Adjust the bottom padding as needed */
+    }
+
+    .card {
+      margin-left: 1rem;
+      /* Left and right margin for all cards */
+      margin-right: 1rem;
+    }
+
+    .card-body {
+      padding: .5rem;
+      /* Adjust padding as needed */
+    }
+
+    .card-img-top {
+      height: 200px;
+      /* Adjust image height as needed */
+      object-fit: cover;
+      /* Ensure images maintain aspect ratio and cover the whole container */
+    }
+
+    .star-ratings {
+      display: flex;
+    }
+
+    .footer {
+      z-index: 1;
+      background-color: black;
+      color: white;
+      position: relative;
+      padding: 8rem;
+      /* Adjust this to control the footer size */
+      height: 400px;
+      /* Set a fixed height for the footer */
+      overflow: hidden;
+      clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .footer h5,
+    .footer ul,
+    .footer li,
+    .footer a,
+    .footer small {
+      color: white;
+      font-size: 0.9rem;
+      /* Adjust the size as needed */
+    }
+
+    .footer a {
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer .fs-5 {
+      font-size: 0.9rem;
+      /* Adjust the size as needed */
+    }
+
+    /* Adjust columns to create the sliding effect */
+    .footer .col-lg-3,
+    .footer .col-lg-2 {
+      position: relative;
+      margin-bottom: 0;
+      /* Ensure all columns align at the bottom */
+    }
+
+    /* Add padding to lower the content */
+    .footer .row {
+      padding-top: 2rem;
+      /* Adjust this value as needed */
+    }
+
+    .footer .col-lg-2:nth-of-type(1) {
+      margin-top: 2rem;
+      /* Initial position */
+    }
+
+    .footer .col-lg-2:nth-of-type(2) {
+      margin-top: -1rem;
+      /* Slightly higher */
+      margin-left: -1rem;
+      /* Slightly to the left */
+    }
+
+    .footer .col-lg-2:nth-of-type(3) {
+      margin-top: -1rem;
+      /* Higher */
+      margin-left: -1rem;
+      /* More to the left */
+    }
+
+    .footer .col-lg-2:nth-of-type(4) {
+      margin-top: -1rem;
+      /* Even higher */
+      margin-left: -1rem;
+      /* Even more to the left */
+    }
+
+    .footer .col-lg-2:nth-of-type(5) {
+      margin-top: -1rem;
+      /* Highest */
+      margin-left: -1rem;
+      /* Most to the left */
+    }
+
+    /* Style for the icons at the bottom */
+    .footer .social-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 150px;
+      /* Adjust the width as needed */
+      position: absolute;
+      left: 150px;
+      /* Adjust this value to move icons to the left */
+      bottom: 140px;
+      /* Adjust this value to position icons vertically */
+    }
+
+    .btn-primary {
+      margin-left: -95px;
+      /* Adjust negative margin to align button with input */
+    }
+
+    .custom-input {
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      font-style: italic;
+      font-size: 16px;
+      /* Adjust font size as needed */
+      padding: 8px;
+      width: 500px;
+      /* Adjust width to leave space for button */
+    }
+
+    .form-inline .form-control {
+      margin-left: -70px;
+      /* Adjust this value as needed to move elements left */
+      padding: 7px;
+      /* Adjust padding as needed */
+      width: 500px;
+      /* Adjust width to leave space for button */
+    }
+
+    ::placeholder {
+      /* Adjust placeholder styles */
+      font-size: 15px;
+      color: #999;
+
+      text-align: left;
+      /* Align placeholder text to the left */
+    }
+
+    .custom-container {
+      background-color: black;
+      color: white;
+      padding: 80px;
+      /* Adjust padding as needed */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .custom-container h4,
+    .custom-container p,
+    .custom-container h5,
+    .custom-container a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .social-icons a {
+      color: white;
+      margin-right: 0.5rem;
+    }
+
+    /* Create slanted effect */
+    .custom-container .row {
+      position: relative;
+      overflow: hidden;
+    }
+
+
+
+    .custom-container .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .custom-container .row>div:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      /* Match container background */
+      clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+      z-index: -1;
+      /* Behind the content */
+    }
+  </style>
+  </head>
+
+  <body>
+
+    <div class="jumbotron text-center custom-footer">
+      <h2>Find the best businesses in town</h2>
+      <p>Search for restaurants, contractors, and other local businesses in your area to find out which ones are the
+        best!</p>
+      <div class="d-flex justify-content-center">
+        <form class="row g-10">
+          <div class="col-80">
+            <label for="inputPassword2" class="visually-hidden">Find local businesses...</label>
+            <input type="text" class="form-control" placeholder="Find local businesses...">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-success mb-3">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-center my-4">
+      <h5 class="text-primary">Browse businesses</h5>
+      <h6>Not sure what to search for? Browse some of the popular<br> categories</h6>
+    </div>
+    <div class="container my-4">
+      <div class="row flex-nowrap">
+        <div class="col-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Restaurants</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1520434901111-8e9bcb42c628?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Dry Cleaning</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1560625172-c934065c725d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="Image 4">
+            <div class="card-body">
+              <h5 class="card-title">Breweries</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1556801587-bbbb66081240?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Painters</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row d-flex justify-content-start">
+        <div class="col-3 p-0 mx-1">
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Image 2">
+            <div class="card-body">
+              <h5 class="card-title">coffee</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 p-0 mx-1">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Gyms</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 p-0 mx-1">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1549451371-64aa98a6f660?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Events</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 p-0 mx-1">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Image 4">
+            <div class="card-body">
+              <h5 class="card-title">Medical</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light bg-light my-5 mx-2">
+      <div class="container-fluid">
+        <div class="col-12">
+          <a class="navbar-brand text-dark font-weight-bold ">Get the latest news</a>
+        </div>
+        <div class="row">
+          <div class="col-12">
+
+            <h6 class="mr-auto mb-0 my-2 text-secondary ">Stay in the loop with the latest updates and features added to
+              our<br>application!</h6>
+          </div>
+        </div>
+        <form class="form-inline">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-50">
+                <div class="form-group mb-2">
+                  <input type="email" class="form-control w-100" placeholder="Youremail@example.com" required>
+                </div>
+                <div class="form-group mb-2">
+                  <input type="email" class="form-control w-100"
+                    style="border: none; box-shadow: none; background-color: transparent; font-style: italic;"
+                    placeholder="You can unsubscribe at any time" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <button type="button" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+    </nav>
+    <div class="text-center my-8">
+      <h5 class="text-primary">New Businesses</h5>
+      <h6>Here are some of the most popular new businesses in you area.</h6>
+    </div>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <p class="card-text">The Bamboo Rench.<br>(12 Reviews)<br>Upper West Ceon,Gram</p>
+            <!-- Star ratings -->
+            <div class="star-ratings">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star-half-alt text-warning "></i>
+            </div>
+          </div>
+          <div class="card-footer my-20">
+
+            <i class="fas fa-clock"></i> <!-- This is the Font Awesome icon -->
+            Opened two months ago
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-80">
+          <img
+            src="https://images.unsplash.com/photo-1439405326854-014607f694d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <p class="card-text">Lakeside oyster<br>(8 Reviews)<br>East Forn,Kugan</p>
+            <!-- Star ratings -->
+            <div class="star-ratings">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star-half-alt text-warning"></i>
+            </div>
+          </div>
+          <div class="card-footer my-20">
+            <small class="text-muted">
+              <i class="fas fa-clock"></i> <!-- Font Awesome icon -->
+              Opened two months ago
+            </small>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1686574086026-9f02b82f4765?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <p class="card-text">Wild junction<br>(29 Reviews)<br>Shoties Wood,Drads</p>
+            <!-- Star ratings -->
+            <div class="star-ratings">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star-half-alt text-warning"></i>
+            </div>
+          </div>
+          <div class="card-footer my-20">
+            <small class="text-muted">
+              <i class="fas fa-clock"></i> <!-- Font Awesome icon -->
+              Opened two months ago
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="custom-container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="/" aria-label="SB UI Kit Pro">
+            <h4>SB UI Kit Pro</h4>
+          </a>
+          <p>Design made easy</p>
+          <div class="social-icons">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h5>Product</h5>
+          <p>Landing<br>Pages<br>Sections<br>Documentation</p>
+        </div>
+        <div class="col-md-2">
+          <h5>Legal</h5>
+          <p>Privacy and policy<br>Terms and conditions<br>Licenses</p>
+        </div>
+        <div class="col-md-2">
+          <h5>Technical</h5>
+          <p>Documentation<br>Changing<br>Theme customization<br>UI kit</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Includes</h5>
+          <p>Utilities<br>Components<br>Layout<br>Code samples</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
